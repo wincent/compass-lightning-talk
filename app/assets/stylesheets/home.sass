@@ -6,32 +6,49 @@ article
   margin: 20px auto
   padding: 20px
   width: 640px
-  @include border-radius(10px)
+  +border-radius(10px)
 
 figcaption
+  display: none
   float: right
   width: 200px
 
 figure
+  display: none
   float: left
-  width: 400px
+  width: 380px
 
 footer
+  color: #bbb
+  font:
+    size: 10px
+    style: italic
   margin: 20px 0
+  text-align: center
 
 section
+  background-color: #efefef
   margin: 20px 0
-  @include clearfix
+  padding: 20px
+  +border-radius(5px)
+  +clearfix
+
+.active
+  background-color: #fdf6e3
+  +box-shadow
+
+.lightning:after
+  content: image-url('lightning.png') no-repeat
 
 // demo styles
 
 .demo-01
   .cross
+    background: image-url('cross.png')
     height: 32px
     width: 32px
-    background: image-url('cross.png')
 
-@include font-face('Gardener', font-files("gardener.woff", woff, "gardener.ttf", truetype, 'gardener.svg', svg), "gardener.eot")
++font-face('Gardener', font-files("gardener.woff", woff, "gardener.ttf", truetype, 'gardener.svg', svg), "gardener.eot")
 
 .demo-02
   .gardner
@@ -40,8 +57,29 @@ section
 .demo-03
   .rounded
     border: 2px solid #999
-    height: 50px
-    line-height: 50px
-    padding: 0 20px
-    @include border-radius(10px)
-    @include border-bottom-right-radius(40px)
+    padding: 20px
+    +border-radius(10px)
+    +border-bottom-right-radius(40px)
+
+.demo-04
+  .gradient
+    min-height: 32px
+    padding-left: 32px
+    +background(image-url('smiley.png') no-repeat, linear-gradient(top left, #333, #0c0))
+
+.demo-05
+  .transition
+    background: #966
+    width: 100px
+    +transition-property(width)
+    +transition-duration(2s)
+  .transition:hover
+    width: 200px
+
+.demo-06
+  .very-transparent
+    +opacity(0.25)
+  .semi-transparent
+    +opacity(0.5)
+  .somewhat-transparent
+    +opacity(0.75)

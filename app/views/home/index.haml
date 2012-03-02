@@ -1,7 +1,12 @@
 #home
   %article
-    %h1 Compass lightning talk
-    %p This is a simple template, using the &ldquo;compass/reset&rdquo; module
+    %h1.lightning Compass lightning talk
+    %p
+      %a(href="http://compass-style.org/")http://compass-style.org/
+    %section
+      %h1 The &ldquo;compass/reset&rdquo; module
+      %figure
+        %p Exciting, isn't it?
     %section.demo-01
       %h1 Image via <code>image-url</code> helper
       %figure
@@ -23,5 +28,29 @@
       %figcaption
         I used the <code>border-radius</code> mixin for the base style, and then
         changed one of the corners with <code>border-bottom-right-radius</code>
+    %section.demo-04
+      %h1 Gradients
+      %figure
+        .gradient
+          This element has a background gradient
+    %section.demo-05
+      %h1 CSS3 transitions
+      %figure
+        .transition
+          Hover
+      %figcaption
+        This element has a 2 second transition which will animate its width
+        property on hover.
+    %section.demo-06
+      %h1 Opacity
+      %figure
+        .very-transparent
+          =image_tag 'disc-blue.png'
+        .semi-transparent
+          =image_tag 'disc-blue.png'
+        .somewhat-transparent
+          =image_tag 'disc-blue.png'
+      %figcaption
+        The icons to the right have 25%, 50% and 75% opacity
     %footer
-      Compass. Sass. Rails.
+      Causes lightning talks, March 2, 2012
