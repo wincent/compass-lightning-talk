@@ -1,4 +1,27 @@
 #home
-  %h1 Home#index
-  %p Find me in app/views/home/index.haml
-  .cross
+  %article
+    %h1 Compass lightning talk
+    %p This is a simple template, using the &ldquo;compass/reset&rdquo; module
+    %section.demo-01
+      %h1 Image via <code>image-url</code> helper
+      %figure
+        .cross
+      %figcaption
+        This is an element with the background image set using the
+        <code>image-url</code> helper
+    %section.demo-02
+      %h1 <code>font-face</code> helper
+      %figure
+        %p.gardner
+          This is text using the &ldquo;Gardener&rdquo; font, set using the
+          <code>font-face</code> helper.
+    %section.demo-03
+      %h1 Rounded corners
+      %figure
+        .rounded
+          This box has some rounded corners.
+      %figcaption
+        I used the <code>border-radius</code> mixin for the base style, and then
+        changed one of the corners with <code>border-bottom-right-radius</code>
+    %footer
+      Compass. Sass. Rails.

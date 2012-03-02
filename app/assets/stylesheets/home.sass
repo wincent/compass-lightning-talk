@@ -1,8 +1,47 @@
-body
-  font-family: Arial
+// overall page styles
 
-#home
+article
+  background: #fff
+  border: 1px solid #ccc
+  margin: 20px auto
+  padding: 20px
+  width: 640px
+  @include border-radius(10px)
+
+figcaption
+  float: right
+  width: 200px
+
+figure
+  float: left
+  width: 400px
+
+footer
+  margin: 20px 0
+
+section
+  margin: 20px 0
+  @include clearfix
+
+// demo styles
+
+.demo-01
   .cross
     height: 32px
     width: 32px
     background: image-url('cross.png')
+
+@include font-face('Gardener', font-files("gardener.woff", woff, "gardener.ttf", truetype, 'gardener.svg', svg), "gardener.eot")
+
+.demo-02
+  .gardner
+    font-family: 'Gardener'
+
+.demo-03
+  .rounded
+    border: 2px solid #999
+    height: 50px
+    line-height: 50px
+    padding: 0 20px
+    @include border-radius(10px)
+    @include border-bottom-right-radius(40px)
