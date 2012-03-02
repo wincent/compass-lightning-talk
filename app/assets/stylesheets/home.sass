@@ -47,8 +47,8 @@ section
 .demo-01
   .cross
     background: image-url('cross.png')
-    height: 32px
-    width: 32px
+    height: image-height('cross.png')
+    width: image-width('cross.png')
 
 +font-face('Gardener', font-files("gardener.woff", woff, "gardener.ttf", truetype, 'gardener.svg', svg), "gardener.eot")
 
@@ -65,13 +65,19 @@ section
 
 .demo-04
   .gradient
-    min-height: 32px
-    padding-left: 32px
+    color: #fff
+    line-height: image-height('smiley.png')
+    min-height: image-height('smiley.png')
+    padding-left: image-width('smiley.png')
     +background(image-url('smiley.png') no-repeat, linear-gradient(top left, #333, #0c0))
 
 .demo-05
   .transition
     background: #966
+    color: #fff
+    height: 35px
+    line-height: 35px
+    padding: 0 10px
     width: 100px
     +transition-property(width)
     +transition-duration(2s)
@@ -90,6 +96,6 @@ section
 
 .demo-07
   .sprite
-    height: 32px
-    width: 32px
+    height: image-height('scenery/scenery.png')
+    width: image-width('scenery/scenery.png')
     +scenery-sprite(scenery)
