@@ -12,3 +12,7 @@ scenery/scenery.png: scenery/scenery-1626921d933da6a883a03c8e7201a198.png
 scenery/scenery_hover.png: scenery/scenery_hover-2264c74afeae99896918f8f9507dfe2b.png
 smiley.png: smiley-c2fb010bbf52c407b518ed8a828aa66f.png
 application.js: application-04cb640a6e0350c487bddfc4498bfac0.js
+home.css: home-ba14d3d11e33aaf259501013d319c331.css
+ie.css: ie-7270767b2a9e9fff880aa5de378ca791.css
+print.css: print-7270767b2a9e9fff880aa5de378ca791.css
+screen.css: screen-ac2a4b84d82039b64b1f3b736d39c439.css
