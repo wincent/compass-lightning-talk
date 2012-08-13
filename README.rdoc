@@ -4,8 +4,10 @@ features of Compass for a 5-minute lightning talk at Causes
 
 A live copy of the presentation is hosted at:
 
-  http://peaceful-journey-2015.herokuapp.com/
+http://peaceful-journey-2015.herokuapp.com/
 
 Greg Hurrell
+
 greg@causes.com
+
 http://www.causes.com/jobs
